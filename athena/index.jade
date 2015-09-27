@@ -1,0 +1,24 @@
+extends ../jade/page.jade
+
+block name
+  -name = "athena"
+
+block basePath
+  -basePath = "../"
+
+block content
+  h1 Athena
+  p Athena aimed to accelerate human learning by mapping knowledge as a directed graph of concepts. Learning a concept depends on understanding prerequisite concepts - a map would let you point at what you knew and where you wanted to be and see the paths to get there. Three of us, Juan Batiz-Benet, Ali Yahya, and myself, built an online wiki graph editor to construct this. Each node (a concept) contained educational materials sourced from the interwebz.
+  p We built a general-purpose web media remixer so the relevant piece of an explanation could be used without including the whole thing, or so that complementary components could be joined in a larger explanation. The remixer could clip, loop, and splice videos from YouTube and Vimeo, stitch together images, and incorporate raw text and PDFs. (It had it's own name, Acorn.)
+  p We built graphs for computer science and math classes at Stanford and had students using them.
+  p Among our mistakes was a lack of focus on developing users. We saw a world in which independent learners online could take custom paths through knowledgespace, finding wherever they went connected trails of content set free from the one-size-fits-all rigidity of a lecture series, but we failed to bring it about.
+  p If you are working on this dream, please let us know. We would love to help.
+  .img-container.w181
+    .img-subcontainer
+      img.h50.mr4(src='#{imgPath}chalk-graph.png')
+    .img-subcontainer
+      img.h50(src='#{imgPath}athena-icon.png')
+    .img-subcontainer
+      img.h50.ml8(src='#{imgPath}acorn.png')
+  hr
+  p Some of our code is opensourced - the #[a(href='//github.com/athenalabs/acorn-player', target='_blank') remixer core], #[a(href='//github.com/athenalabs/athena-lib-js', target='_blank') some libraries] - but most of it isn't. I'm not sure why this is; I'll make sure it gets fixed.

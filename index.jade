@@ -1,0 +1,53 @@
+extends jade/page.jade
+
+block name
+  -name = "home"
+
+block basePath
+  -basePath = ""
+
+block relativePath
+  -relativePath = ""
+
+block content
+  .fixed-cover
+    #content-fixed.w460
+      h1 Daniel Windham
+      p Hey there! This is my simple site.
+      p You can learn about my projects here.
+      ul#projects-list
+        li I work with #[a(href='tangible-media-research') dynamic physical shape displays] at the MIT Media Lab
+        li I've built an #[a(href='source-flow-plotter') open-source Python execution visualizer]
+        li I'm writing a tutorial/treatise called #[a(href='thinking-in-git') Thinking in Git]
+        li Increasingly I spend time #[a(href='maker-things') making things]
+        li I tried organizing the internet's knowledge with #[a(href='athena') Athena]
+      p You can find some other things, too.
+      ul#beyond-list
+        li The French-Enlightenment-style #[a(href='salons') salons] I used to organize
+        li The #[a(href='miscreants-computer-conspiracy') Miscreants#{"'"} Computer Conspiracy], the cult-for-a-better-future we're kicking off
+        li Some #[a(href='drawings-and-paintings') drawings and paintings] I've made
+        li A speech I gave about paying attention to your #[a(href='lizard-brain-speech') lizard brain]
+        li Something we called #[a(href='burrow') The Burrow]
+        li Things by other people that I #[a(href='recommendations') recommend]
+      p You can hop to another Daniel-island, like:
+      ul#beyond-list
+        li my #[a(href='//github.com/tenedor', target='_blank') github]
+        li my #[a(href='//www.linkedin.com/pub/daniel-windham/39/104/315', target='_blank') linked in]
+        li my #[a(href='daniel-windham-resume.pdf', target='_blank') resume]
+  .w240.ml495.mt45
+    .overlay
+      .fader-top.h45.w240
+      .fader-bottom.h45.w240
+    #content-images
+      a(href='drawings-and-paintings')
+        img(src='#{imgPath}drawings-and-paintings/11-11_oil-portrait_streak.jpg')
+      a(href='source-flow-plotter')
+        img(src='#{imgPath}source-flow-plotter/coins.py-step-indexed.jpg')
+      a(href='maker-things')
+        img(src='#{imgPath}maker-things/laser-cutter-08.jpg')
+      a(href='tangible-media-research')
+        img(src='#{imgPath}tangible-media-research/shape-synthesis.jpg')
+      a(href='burrow')
+        img(src='#{imgPath}burrow/01.jpg')
+      a(href='drawings-and-paintings')
+        img(src='#{imgPath}drawings-and-paintings/14-09-20_charcoal-portrait_Ashly.jpg')

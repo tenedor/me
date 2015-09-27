@@ -1,0 +1,48 @@
+[user]
+  name = Your Name
+  email = you@website.com
+
+[alias]
+  cm = commit
+  cma = commit -a
+  co = checkout
+  cob = checkout -b
+  ft = fetch -p
+  br = branch -a
+  st = status -s
+  cp = cherry-pick
+  sm = submodule
+  lg = log --graph --decorate --abbrev-commit --pretty=format:'%C(bold red)%h%C(reset) %C(bold blue)%an%C(reset) -%C(cyan)%d%C(reset) %s %C(bold cyan)(%cr)'
+  ls = log --stat --decorate --no-merges
+  df = diff -M
+  dfs = diff --staged -M
+  dfst = diff --stat -r -M
+  dfsst = diff --staged --stat -r -M
+  shst = show --stat
+  stl = stash list
+  stp = stash pop
+  who = shortlog -s --no-merges
+
+[color]
+  diff        = auto
+  branch      = auto
+  grep        = auto
+  showbranch  = auto
+  ui          = auto
+  interactive = auto
+  status      = auto
+
+[branch]
+  autosetuprebase = always
+
+[receive]
+  denyCurrentBranch = refuse
+
+[rebase]
+  autosquash = true
+
+[credential]
+  helper = osxkeychain
+
+[push]
+  default = simple

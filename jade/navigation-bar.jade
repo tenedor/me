@@ -1,0 +1,37 @@
+-basePath = basePath || ""
+
+-
+  projectsSubmenu = [
+    ["Tangible Media research", "tangible-media-research"],
+    ["Python execution visualizer", "source-flow-plotter"],
+    ["Thinking in Git", "thinking-in-git"],
+    ["Maker things", "maker-things"],
+    ["Athena", "athena"],
+  ]
+
+  beyondSubmenu = [
+    ["Salons", "salons"],
+    ["Miscreants' Computer Conspiracy", "miscreants-computer-conspiracy"],
+    ["Drawings and paintings", "drawings-and-paintings"],
+    ["Lizard Brain speech", "lizard-brain-speech"],
+    ["The Burrow", "burrow"],
+    ["Recommendations", "recommendations"],
+  ]
+
+#navigation-bar
+  ul#navigation-menu
+    li#navigation-menu-home.navigation-menu
+      a(href='#{basePath || "."}') ~/
+    li#navigation-menu-projects.navigation-menu.has-submenu
+      a(href='#') To the Projects
+      ul#projects-submenu.menu-dropdown
+        each item in projectsSubmenu
+          li.menu-dropdown
+            a(href='#{basePath}#{item[1]}') #{item[0]}
+    li#navigation-menu-beyond.navigation-menu.has-submenu
+      a(href='#') ...and Beyond
+      ul#beyond-submenu.menu-dropdown
+        each item in beyondSubmenu
+          li.menu-dropdown
+            a(href='#{basePath}#{item[1]}') #{item[0]}
+#navigation-bar-shadow
