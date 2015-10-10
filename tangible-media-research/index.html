@@ -21,7 +21,6 @@
         <li id="navigation-menu-beyond" class="navigation-menu has-submenu"><a href="#">...and Beyond</a>
           <ul id="beyond-submenu" class="menu-dropdown">
             <li class="menu-dropdown"><a href="../salons">Salons</a></li>
-            <li class="menu-dropdown"><a href="../miscreants-computer-conspiracy">Miscreants' Computer Conspiracy</a></li>
             <li class="menu-dropdown"><a href="../drawings-and-paintings">Drawings and paintings</a></li>
             <li class="menu-dropdown"><a href="../lizard-brain-speech">Lizard Brain speech</a></li>
             <li class="menu-dropdown"><a href="../burrow">The Burrow</a></li>
@@ -33,39 +32,39 @@
     <div id="navigation-bar-shadow"></div>
     <div id="content">
       <h1>Tangible Media research</h1>
-      <p>I work with the Tangible Media Group led by Hiroshi Ishii at the MIT Media Lab. We explore dynamic physical media: objects that can change their physical properties like shape, texture, and stiffness in real time through interactions with their digital and physical environments. The divide between the worlds of bits and atoms is wrong; we're finding ways to merge them.</p>
+      <p>I work with the <a href="//tangible.media.mit.edu" target="_blank">Tangible Media Group</a> led by Hiroshi Ishii at the MIT Media Lab. We explore dynamic physical media: objects that can change their physical properties like shape, texture, and stiffness in real time through interactions with their digital and physical environments. The divide between the worlds of bits and atoms is wrong; we're finding ways to merge them.</p>
       <p>In particular I've worked with pin-based shape displays.</p><img src="../img/tangible-media-research/inform-shape-display.gif" class="h180">
       <div class="image-caption">the inFORM shape display (<a href="http://tangible.media.mit.edu/project/inform/">original video</a>)</div>
       <h3>Coupling Static and Dynamic Shape</h3>
       <p>I first worked with Philipp Schoessler to explore Shape Synthesis, the coupling of static and dynamic objects to overcome the limitations of either by itself. Real-time shape displays like ours are limited by having only vertical degrees of freedom, by their inability to form overhangs, and so on. But the display can manipulate static objects like wooden cubes to construct advanced structures and to constrain user interactions. Static objects can be deftly rotated, stacked, and horizontally translated by humans, and the shape display can augment these actions with dynamically generated physical meaning.</p>
-      <p>This work is written up in two papers, neither currently public:</p>
+      <p>This work is written up in two papers. The first paper is available; the second is in limbo:</p>
       <ul class="no-bullets-standard">
         <li class="paper">
           <div class="paper-title">Kinetic Blocks - Actuated Constructive Assembly for Interaction and Display</div>
           <div class="paper-authors">Schoessler, Windham, Leithinger, Folmer, and Ishii</div>
-          <div class="paper-status">Accepted to UIST '15</div>
+          <div class="paper-status">UIST '15<span class="links"><a href="kinetic-blocks/kinetic-blocks-uist-15.pdf" target="_blank">paper</a> <a href="//tangible.media.mit.edu/project/kinetic-blocks/" target="_blank">video</a> <a href="kinetic-blocks/press/">press</a></span></div>
         </li>
         <li class="paper">
           <div class="paper-title">Shape Synthesis - Exploring Dynamic Physicsal Extensions of Objects on Shape Changing Interfaces</div>
           <div class="paper-authors">Schoessler, Windham, Leithinger, Folmer, and Ishii</div>
-          <div class="paper-status">Submitted to TEI '16</div>
+          <div class="paper-status">Rejected from TEI '16</div>
         </li>
       </ul>
       <div class="img-container w544">
         <div class="img-subcontainer"><img src="../img/tangible-media-research/shape-synthesis.jpg" class="w345"></div>
-        <div class="img-subcontainer"><img src="../img/tangible-media-research/kinetic-blocks.jpg" class="w194"></div>
+        <div class="img-subcontainer"><a href="//tangible.media.mit.edu/project/kinetic-blocks/" target="_blank"><img src="../img/tangible-media-research/kinetic-blocks.jpg" class="w194"></a></div>
       </div>
       <div class="image-caption">Aided by visual tracking, the blocks-and-curve behave as one object.<br> Structures can be built with various construction techniques, like catapulting.</div>
       <h3>Simulating Materiality</h3>
       <p>I then joined Luke Vink and Ken Nakagaki in explorations of simulated materiality in touch interactions: can the shape display feel like rubber, liquid, metal, flesh? At this point I was the lead software engineer for Tangible Media.</p>
       <p>I first sped up our work by rebuilding our shape display software stack from the ground up. The codebase was 5 years old, full of hacks, and software written for one machine was incompatible with the others. I fixed these problems and others and structured a clear, modular system. Luke, who is primarily a designer, stated, <span class="text-highlight">"What I love most is that I can teach this codebase to someone new, and they can go build something with it."</span></p>
-      <p>We all built things with it. I built half-a-dozen applications exploring shape-recording, touch-sensing, force-feedback, and proximity-sensing. I supported development of another half-dozen. We'll say more about these soon but for now are keeping quiet.</p>
+      <p>We all built things with it. I built half-a-dozen applications exploring shape-recording, touch-sensing, force-feedback, and proximity-sensing. I supported development of another half-dozen that summer and more since. (And by now, far more has been built without my involvement than was built with it.)</p>
       <p>With a fourth collaborator, Jared Counts, we wrote a paper:
         <ul class="no-bullets-standard">
           <li class="paper">
             <div class="paper-title">Rendering Dynamic Material Properties in Response to Direct Physical Touch<br>with Shape Changing Interfaces</div>
             <div class="paper-authors">Nakagaki, Vink, Counts, Windham, Leithinger, Follmer, and Ishii</div>
-            <div class="paper-status">Submitted to CHI '16</div>
+            <div class="paper-status">Accepted to CHI '16</div>
           </li>
         </ul>
         <hr>

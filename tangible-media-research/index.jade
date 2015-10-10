@@ -8,40 +8,42 @@ block basePath
 
 block content
   h1 Tangible Media research
-  p I work with the Tangible Media Group led by Hiroshi Ishii at the MIT Media Lab. We explore dynamic physical media: objects that can change their physical properties like shape, texture, and stiffness in real time through interactions with their digital and physical environments. The divide between the worlds of bits and atoms is wrong; we're finding ways to merge them.
+  p I work with the #[a(href='//tangible.media.mit.edu', target='_blank') Tangible Media Group] led by Hiroshi Ishii at the MIT Media Lab. We explore dynamic physical media: objects that can change their physical properties like shape, texture, and stiffness in real time through interactions with their digital and physical environments. The divide between the worlds of bits and atoms is wrong; we're finding ways to merge them.
   p In particular I've worked with pin-based shape displays.
   img.h180(src='#{imgPath}inform-shape-display.gif')
   .image-caption
     | the inFORM shape display (#[a(href='http://tangible.media.mit.edu/project/inform/') original video])
   h3 Coupling Static and Dynamic Shape
   p I first worked with Philipp Schoessler to explore Shape Synthesis, the coupling of static and dynamic objects to overcome the limitations of either by itself. Real-time shape displays like ours are limited by having only vertical degrees of freedom, by their inability to form overhangs, and so on. But the display can manipulate static objects like wooden cubes to construct advanced structures and to constrain user interactions. Static objects can be deftly rotated, stacked, and horizontally translated by humans, and the shape display can augment these actions with dynamically generated physical meaning.
-  p This work is written up in two papers, neither currently public:
+  p This work is written up in two papers. The first paper is available; the second is in limbo:
   ul.no-bullets-standard
     li.paper
       .paper-title Kinetic Blocks - Actuated Constructive Assembly for Interaction and Display
       .paper-authors Schoessler, Windham, Leithinger, Folmer, and Ishii
-      .paper-status Accepted to UIST '15
+      .paper-status UIST '15
+        span.links #[a(href='kinetic-blocks/kinetic-blocks-uist-15.pdf', target='_blank') paper] #[a(href='//tangible.media.mit.edu/project/kinetic-blocks/', target='_blank') video] #[a(href='kinetic-blocks/press/') press]
     li.paper
       .paper-title Shape Synthesis - Exploring Dynamic Physicsal Extensions of Objects on Shape Changing Interfaces
       .paper-authors Schoessler, Windham, Leithinger, Folmer, and Ishii
-      .paper-status Submitted to TEI '16
+      .paper-status Rejected from TEI '16
   .img-container.w544
     .img-subcontainer
       img.w345(src='#{imgPath}shape-synthesis.jpg')
     .img-subcontainer
-      img.w194(src='#{imgPath}kinetic-blocks.jpg')
+      a(href='//tangible.media.mit.edu/project/kinetic-blocks/', target='_blank')
+        img.w194(src='#{imgPath}kinetic-blocks.jpg')
   .image-caption
     | Aided by visual tracking, the blocks-and-curve behave as one object.#[br] Structures can be built with various construction techniques, like catapulting.
   h3 Simulating Materiality
   p I then joined Luke Vink and Ken Nakagaki in explorations of simulated materiality in touch interactions: can the shape display feel like rubber, liquid, metal, flesh? At this point I was the lead software engineer for Tangible Media.
   p I first sped up our work by rebuilding our shape display software stack from the ground up. The codebase was 5 years old, full of hacks, and software written for one machine was incompatible with the others. I fixed these problems and others and structured a clear, modular system. Luke, who is primarily a designer, stated, #[span.text-highlight "What I love most is that I can teach this codebase to someone new, and they can go build something with it."]
-  p We all built things with it. I built half-a-dozen applications exploring shape-recording, touch-sensing, force-feedback, and proximity-sensing. I supported development of another half-dozen. We'll say more about these soon but for now are keeping quiet.
+  p We all built things with it. I built half-a-dozen applications exploring shape-recording, touch-sensing, force-feedback, and proximity-sensing. I supported development of another half-dozen that summer and more since. (And by now, far more has been built without my involvement than was built with it.)
   p With a fourth collaborator, Jared Counts, we wrote a paper:
     ul.no-bullets-standard
       li.paper
         .paper-title Rendering Dynamic Material Properties in Response to Direct Physical Touch#[br]with Shape Changing Interfaces
         .paper-authors Nakagaki, Vink, Counts, Windham, Leithinger, Follmer, and Ishii
-        .paper-status Submitted to CHI '16
+        .paper-status Accepted to CHI '16
     hr
   p #[b Our codebases are available on GitHub.] They're configured for our machines, but if it's helpful please check them out! Feel free to ping me with questions.
   ul

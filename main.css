@@ -207,7 +207,7 @@ hr {
   bottom: 0;
   overflow: scroll;
 }
-#content-fixed {
+.fixed-cover #content-fixed {
   position: relative;
   max-width: 600px;
   min-width: 400px;
@@ -251,7 +251,7 @@ hr {
   height: 0;
   clear: both;
 }
-.img-subcontainer {
+.img-container .img-subcontainer {
   display: inline-block;
   float: left;
 }
@@ -260,40 +260,49 @@ hr {
   margin-bottom: 10px;
   color: #999;
 }
-div.half-width {
-  position: relative;
-  width: 50%;
-  float: left;
-}
-img.half-width {
-  width: 50%;
-}
-.squeeze-left {
-  max-width: 100%;
-  float: left;
-}
-.squeeze-right {
-  max-width: 100%;
-  float: right;
-}
-.double-image img {
-  margin-left: 10px;
-  margin-right: 10px;
-}
 ul.no-bullets-standard > li {
   display: inline;
 }
 ul.no-bullets-standard > li > *:last-child {
   margin-bottom: 10px;
 }
-.paper-title {
+.vision-statement {
+  padding: 0 15px;
+}
+.vision-statement p {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+}
+.paper .paper-title {
   font-weight: 700;
   font-style: italic;
 }
-.paper-authors {
+.paper .paper-authors {
   color: #777;
 }
-.paper-status {
+.paper .paper-status {
+  color: #777;
+  font-style: italic;
+}
+.paper .paper-status .links {
+  margin-left: 25px;
+}
+.paper .paper-status .links a {
+  margin-left: 5px;
+  font-style: normal;
+}
+.press-list li {
+  color: #888;
+  margin-bottom: 10px;
+}
+.salon-list .salon-summary {
+  display: inline;
+}
+.salon-list .salon-summary > *:last-child {
+  margin-bottom: 10px;
+}
+.salon-list .salon-summary .date {
   color: #777;
   font-style: italic;
 }

@@ -1,0 +1,26 @@
+extends ../../../jade/page.jade
+
+block name
+  -name = "kinetic-blocks-press"
+
+block basePath
+  -basePath = "../../../"
+
+block content
+  h1 Kinetic Blocks press
+  hr
+  -
+    articles = [
+      ["thecreatorsproject.vice.com/blog/watch-mits-kinetic-shape-display-move-objects-and-build-structures", "Watch MIT's Kinetic Shape Display Move Objects and Build Structures", "DJ Pangburn", "Vice", "10/2015"],
+      ["www.wired.com/2015/10/mits-crazy-shapeshifting-display-can-now-build-with-blocks/", "MIT's Crazy Shapeshifting Display Can Now Build With Blocks", "Liz Stinson", "Wired", "10/2015"],
+      ["www.csmonitor.com/Technology/2015/1015/MIT-s-shapeshifting-Kinetic-Blocks-can-learn-from-humans", "MIT's shapeshifting 'Kinetic Blocks' can learn from humans", "Jeff Ward-Bailey", "Christian Science Monitor", "10/2015"],
+      ["phenomena.nationalgeographic.com/2015/12/22/type-me-a-tower-assembling-real-structures-with-only-a-keyboard/", "Type Me a Tower", "Robert Krulwich", "National Geographic", "12/2015"],
+    ]
+  ul.press-list.list-unstyled
+    for article in articles
+      li
+        a(href='//#{article[0]}', target='_blank')
+          span.title #{article[1]}
+        | , #[span.publication #{article[3]}], #[span.year #{article[4]}]
+  hr
+  a.back(href='../..') &#8592; back

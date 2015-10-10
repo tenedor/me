@@ -8,4 +8,75 @@ block basePath
 
 block content
   h1 Salons
-  p Under construction.
+  p For a couple years I regularly organized events called salons.
+  p During the French Enlightenment, salons brought together scientists, artists, and philosophers to discuss the ideas they were pursuing. When my Athena teammates Juan, Ali, and I moved into a house together, we began a tradition of Athena Salons - each week, a few dozen guests would join us for wine, food, meeting people, and occasional bouts of fencing, and in the middle of the evening four to six guests would give short talks on any topic they wished. Athena's goal was to share understanding, and salons were a natural fit.
+  p When I returned to Harvard, I began a similar tradition. Harvard's culture tends to regard being casual as the inverse of learning and thinking, and students often mourn the community's disinclination from informal intellectual discourse. Salons became my foremost attempt to set the opposite trend.
+  p Harvard salons came every three weeks. Talks covered everything from mole rat eusociality to the heroic scramble that passed FDR's G.I. Bill to Hilbert's "Infinity Hotel" thought experiment. We had live painting, sing-along accordioning, and a theatrical performances. Speakers taught us how to tie knots and even how to make ourselves cry.
+  p Many friendships and at least a couple relationships began at salons. We came to see our peers as our teachers and our teachers as our peers. I don't know if we impacted the broader Harvard undergraduate culture, but we definitely made the Harvard we lived closer to the image we dreamed of.
+  p I held 15 salons at Harvard across three semesters and a summer; in total, 101 distinct people came, and many came often.
+  p My friend Rafael Cosman began his own flavor of salons at Stanford. He did a marvelous job pulling in additional organizers, and from Stanford they have spread to dozens of other locations.
+  hr
+  p Here is a list of salon talks.
+  -
+    salonList = [
+      ["10/4/13", [
+        "Zac shared his paintings and let us watch him work on one.",
+        "I talked about Hilbert's Infinity Hotel thought experiment.",
+        "Jacob demoed his idea-sharing and political performance tracking software.",
+        "Christian led a group sing-along to the music of his accordion."]],
+      ["10/25/13", [
+        "Jason taught about the oddities of naked mole rats and their relevance to cancer research.",
+        "Red performed The Raven.",
+        "Erik shared his experiences starting a company in Silicon Valley."]],
+      ["11/15/13", [
+        "Sarah led a conversation on gender-neutral housing at Harvard."]],
+      ["12/6/13", [
+        "Jason taught us about John Snow's discovery that cholera was transmitted through drinking water.",
+        "Michael told the story of passing the GI Bill at the last possible moment.",
+        "Gus shared his thesis work on South-African Jews' interactions with apartheid."]],
+      ["1/31/14", [
+        "I made Mayan hot chocolate.",
+        "Christian shared experiences of having his personality traits interpreted as nationality traits.",
+        "I gave a talk on being taught introspection.",
+        "Trevor challenged the differences in how many of us regard physical and intellectual competences."]],
+      ["2/28/14", [
+        "Low attendance; no talks presented."]],
+      ["3/14/14", [
+        "Trevor led a conversation on college-level courses and Harvard Gen Eds."]],
+      ["4/11/14", [
+        "The salon was saloon themed, with Wild West-styled attire, music, food, and drinks.",
+        "Sheena described her robotics research on path-planning.",
+        "Sarah described her psychology research into the connection between enjoying an activity and co-experiencing it with someone you like or dislike.",
+        "Meena gave a talk on her love of math."]],
+      ["5/2/14", [
+        "I made four types of guacamole.",
+        "Chris talked about statistical learning.",
+        "Zoe taught an interactive lesson on relationship status interactions as discussed in Impro.",
+        "I taught the basics of quantum cryptography.",
+        "We played with steel wool and fire on Weeks' Bridge."]],
+      ["6/27/14", [
+        "Emma had us distill our DNA from our spit while teaching the history of humans' understanding of DNA.",
+        "Dennis read two pieces of fiction he'd written."]],
+      ["7/25/14", [
+        "Kennedy taught us knot-tying."]],
+      ["9/26/14", [
+        "Reina catalyzed a conversation around feminist standpoint theory analysis."]],
+      ["10/24/14", [
+        "Sarah made eggnog.",
+        "Zac, Brooke, Zoe, and I sketched other guests.",
+        "Bethany taught us about psychological research connecting a human's moral self-judgment to their willingness to delay gratification for later reward.",
+        "Lelaina played piano."]],
+      ["11/14/14", [
+        "\"Something Like the Salon\" took place in my room; no talks presented."]],
+      ["12/3/14", [
+        "Lelaina taught us how to cry, and performed Volumnia's final monologue from Coriolanus."]],
+    ]
+  ul.salon-list
+    each salonItem in salonList
+      li.salon-summary
+        .date #{salonItem[0]}
+        ul.details
+          each detail in salonItem[1]
+            li.detail #{detail}
+
+// 253 people, 15 salons, 101 unique people
