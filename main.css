@@ -18,7 +18,6 @@ a.anchor {
   top: -60px;
   visibility: hidden;
 }
-h1,
 p {
   color: #444;
 }
@@ -284,6 +283,16 @@ ul.no-bullets-standard > li > *:last-child {
 .paper .paper-status {
   color: #777;
   font-style: italic;
+}
+.paper .paper-status .paper-awards {
+  margin-left: 25px;
+  color: #333;
+  font-weight: 700;
+  font-style: normal;
+}
+.paper .paper-status .paper-awards::before,
+.paper .paper-status .paper-awards::after {
+  content: "*";
 }
 .paper .paper-status .links {
   margin-left: 25px;

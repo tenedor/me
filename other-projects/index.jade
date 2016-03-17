@@ -1,0 +1,14 @@
+extends ../jade/page.jade
+
+block name
+  -name = "other-projects"
+
+block basePath
+  -basePath = "../"
+
+block content
+  h1 Other Bits
+  p Various bits of things collect on #[a(href='//github.com/tenedor', target='_blank') my GitHub]; some of them having corresponding webpages. Here are a couple I had fun with:
+  ul
+    li A #[a(href='//tenedor.github.io/mouse-tracker', target='_blank') mouse tracker toy] I used to test my mouse events library.
+    li A #[a(href='//tenedor.github.io/kmv-solver', target='_blank') puzzle solver] for knights, knaves, and monks puzzles.
