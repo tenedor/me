@@ -43,8 +43,18 @@ block content
       li.paper
         .paper-title Materiable: Rendering Dynamic Material Properties in Response to Direct Physical Touch with Shape Changing Interfaces
         .paper-authors Nakagaki, Vink, Counts, Windham, Leithinger, Follmer, and Ishii
-        .paper-status To appear in CHI '16
+        .paper-status CHI '16
           span.paper-awards Honorable Mention Award
+          span.links #[a(href='materiable/materiable-chi-16.pdf', target='_blank') paper] #[a(href='//tangible.media.mit.edu/project/materiable/', target='_blank') video] #[a(href='materiable/press/') press]
+  .img-container.w551
+    .img-subcontainer
+      a(href='//tangible.media.mit.edu/project/materiable/', target='_blank')
+        img.w315(src='#{imgPath}materiable-landscape.jpg')
+    .img-subcontainer
+      a(href='//tangible.media.mit.edu/project/materiable/', target='_blank')
+        img.w236(src='#{imgPath}materiable-anatomy.jpg')
+  .image-caption
+    | Simulated landscapes render flexible, elastic, and viscous properties.#[br] In medical contexts, this materiality aids in understanding anatomy.
     hr
   p #[b Our codebases are available on GitHub.] They're configured for our machines, but if it's helpful please check them out! Feel free to ping me with questions.
   ul

@@ -55,8 +55,14 @@ hr {
 .w194 {
   width: 194px;
 }
+.w236 {
+  width: 236px;
+}
 .w240 {
   width: 240px;
+}
+.w315 {
+  width: 315px;
 }
 .w345 {
   width: 345px;
@@ -69,6 +75,9 @@ hr {
 }
 .w544 {
   width: 544px;
+}
+.w551 {
+  width: 551px;
 }
 .w560 {
   width: 560px;
@@ -304,6 +313,8 @@ ul.no-bullets-standard > li > *:last-child {
 .press-list li {
   color: #888;
   margin-bottom: 10px;
+  padding-left: 40px;
+  text-indent: -40px;
 }
 .salon-list .salon-summary {
   display: inline;
