@@ -14,18 +14,14 @@ block content
   .image-caption
     | the inFORM shape display (#[a(href='http://tangible.media.mit.edu/project/inform/') original video])
   h3 Coupling Static and Dynamic Shape
-  p I first worked with Philipp Schoessler to explore Shape Synthesis, the coupling of static and dynamic objects to overcome the limitations of either by itself. Real-time shape displays like ours are limited by having only vertical degrees of freedom, by their inability to form overhangs, and so on. But the display can manipulate static objects like wooden cubes to construct advanced structures and to constrain user interactions. Static objects can be deftly rotated, stacked, and horizontally translated by humans, and the shape display can augment these actions with dynamically generated physical meaning.
-  p This work is written up in two papers. The first paper is available; the second is in limbo:
+  p I first worked with Philipp Schoessler to explore the coupling of static and dynamic objects to overcome the limitations of either by itself. Real-time shape displays like ours are limited by having only vertical degrees of freedom, by their inability to form overhangs, and so on. But the display can manipulate static objects like wooden cubes to construct advanced structures and to constrain user interactions. Static objects can be deftly rotated, stacked, and horizontally translated by humans, and the shape display can augment these actions with dynamically generated physical meaning.
+  p We published this work at UIST:
   ul.no-bullets-standard
     li.paper
       .paper-title Kinetic Blocks - Actuated Constructive Assembly for Interaction and Display
       .paper-authors Schoessler, Windham, Leithinger, Folmer, and Ishii
       .paper-status UIST '15
         span.links #[a(href='kinetic-blocks/kinetic-blocks-uist-15.pdf', target='_blank') paper] #[a(href='//tangible.media.mit.edu/project/kinetic-blocks/', target='_blank') video] #[a(href='kinetic-blocks/press/') press]
-    li.paper
-      .paper-title Shape Synthesis - Exploring Dynamic Physicsal Extensions of Objects on Shape Changing Interfaces
-      .paper-authors Schoessler, Windham, Leithinger, Folmer, and Ishii
-      .paper-status Rejected from TEI '16
   .img-container.w544
     .img-subcontainer
       img.w345(src='#{imgPath}shape-synthesis.jpg')
@@ -38,7 +34,7 @@ block content
   p I then joined Luke Vink and Ken Nakagaki in exploring simulated materiality in touch interactions: can the shape display feel like rubber, liquid, metal, flesh? At this point I was the lead software engineer for Tangible Media.
   p I first sped up our work by rebuilding our shape display software stack from the ground up. The codebase was 5 years old, full of hacks, and software written for one machine was incompatible with the others. I fixed these problems and others and structured a clear, modular system. Luke, who is primarily a designer, stated, #[span.text-highlight "What I love most is that I can teach this codebase to someone new, and they can go build something with it."]
   p We all built things with it. I built half-a-dozen applications exploring shape-recording, touch-sensing, force-feedback, and proximity-sensing. I supported development of another half-dozen that summer and more since. (And by now, far more has been built without my involvement than was built with it.)
-  p With a fourth collaborator, Jared Counts, we wrote a paper:
+  p With a fourth collaborator, Jared Counts, we wrote an award-winning CHI paper:
     ul.no-bullets-standard
       li.paper
         .paper-title Materiable: Rendering Dynamic Material Properties in Response to Direct Physical Touch with Shape Changing Interfaces
@@ -46,13 +42,13 @@ block content
         .paper-status CHI '16
           span.paper-awards Honorable Mention Award
           span.links #[a(href='materiable/materiable-chi-16.pdf', target='_blank') paper] #[a(href='//tangible.media.mit.edu/project/materiable/', target='_blank') video] #[a(href='materiable/press/') press]
-  .img-container.w551
+  .img-container.w544
     .img-subcontainer
       a(href='//tangible.media.mit.edu/project/materiable/', target='_blank')
-        img.w315(src='#{imgPath}materiable-landscape.jpg')
+        img.w295(src='#{imgPath}materiable-landscape.jpg')
     .img-subcontainer
       a(href='//tangible.media.mit.edu/project/materiable/', target='_blank')
-        img.w236(src='#{imgPath}materiable-anatomy.jpg')
+        img.w249(src='#{imgPath}materiable-anatomy.jpg')
   .image-caption
     | Simulated landscapes render flexible, elastic, and viscous properties.#[br] In medical contexts, this materiality aids in understanding anatomy.
     hr
